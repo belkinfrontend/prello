@@ -1,0 +1,11 @@
+@import "../../node_modules/normalize.scss/normalize";
+
+@import "global/fonts";
+@import "global/vars";
+@import "global/base";
+@import "global/common";
+
+
+@import "sections/header";
+@import "sections/main";
+@import "sections/footer";

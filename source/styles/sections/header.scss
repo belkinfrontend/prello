@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: lavender;
+    
+    .person {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .avatar {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVdeWQxpUyMoGkXCIieOqUsbWJ96uPMr4TTFPoCV7H9Kgta270');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

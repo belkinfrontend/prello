@@ -1,0 +1,64 @@
+main {
+    margin: 20px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-column-gap: 10px;
+   
+    section {
+        min-height: 400px;
+        //width: 300px;
+        border: 1px solid #212121;
+        
+        header {
+            background-color: dimgray;
+            border-bottom: 1px solid #212121;
+            color: aliceblue;
+        }
+        
+        input {
+            width: 93%;
+            padding: 10px;
+            border-left: none;
+            border-right: none;
+        }
+        
+        ul {
+            li {
+                border: 1px solid #212121;
+                padding: 10px;
+                cursor: move;
+                
+                img {
+                    cursor: pointer;
+                }   
+            }
+            .lineThroughItem {
+                    text-decoration: line-through;
+                }
+        }
+    }
+    .new-section {
+        border: none;
+        border: 3px dashed #212121;
+        border-radius: 10px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        span {
+            color: green;
+            opacity: .5;
+            font-size: 130px;
+            cursor: pointer;
+            line-height: 10px;
+            transition: all .5s;
+            
+            &:hover {
+                opacity: .8;
+            }
+        }
+        
+    }
+}
