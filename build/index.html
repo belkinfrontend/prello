@@ -25,10 +25,11 @@
       <section> 
         <header>To Do</header>
         <input type="text" placeholder="add new task">
-        <ul></ul>
+        <ul class="getItem" ondragover="allowDrop(event)" ondrop="drop(event)"></ul>
       </section>
       <section> 
         <header>Done</header>
+        <ul class="getItem" ondragover="allowDrop(event)" ondrop="drop(event)"></ul>
       </section>
       <section class="new-section"><span>+</span></section>
     </main>

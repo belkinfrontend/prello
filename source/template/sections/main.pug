@@ -2,9 +2,12 @@ main
     section 
         header To Do
         input(type="text" placeholder="add new task")
-        ul
+        ul.getItem(ondragover="allowDrop(event)" ondrop="drop(event)")
+            
 
     section 
         header Done
+        ul.getItem(ondragover="allowDrop(event)" ondrop="drop(event)")
+            
     section.new-section
         span +

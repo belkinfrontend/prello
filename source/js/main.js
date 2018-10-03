@@ -14,7 +14,8 @@ input.addEventListener("keypress", function (keyPressed) {
 
 
             const li = document.createElement("li");
-            li.setAttribute("draggable", "true")
+            li.setAttribute("draggable", "true");
+            
 
             const checkItem = document.createElement("img");
             checkItem.className = "checkItem";
@@ -68,43 +69,26 @@ function checkToDo() {
     }
 }
 
-//
-//
-//let promise = new Promise( (resolve, reject) => {
-//    const xhr = new XMLHttpRequest();
-//    xhr.open('GET', 'https://uinames.com/api/?ext');
-//
-//    xhr.onreadystatechange = function() {
-//        if (xhr.readyState === 4) {
-//            if(xhr.status >= 200 && xhr.status < 300)
-//                resolve(this.responseText)
-//            else
-//                reject(this.statusText);
-//        }
-//    }
-//    xhr.send();
-//});
-//
-//promise
-//    .then(
-//        (data) => {
-//            let parsed = JSON.parse(data);
-//            console.log(parsed);
-//            
-//            let img = document.querySelector("#img");
-//            img.src = parsed.photo;
-//            img.style.border = "5px dotted #212121";
-//            
-//            let img2 = document.querySelector("#img2");
-//            img2.src = 'https://picsum.photos/200/300/?random';
-//            img2.style.border = "5px dotted #212121";
-//            
-//        },
-//        (err) => {
-//            console.error('My error', err);
-//
-// 
-//        }
-//    );
-//        
-//
+
+//===================== Drag & Drop
+
+const dragStart = (event) => {
+  event.dataTransfer.setData("text/plain", event.target.id);
+}
+
+const allowDrop = (event) => {
+  event.preventDefault();
+  //event.currentTarget.style.background = '#7f8082';
+}
+
+const drop = (event) => {
+  event.preventDefault();
+  const data = event.dataTransfer.getData("text/plain");
+  const element = document.querySelector('li');
+  //event.currentTarget.style.background = 'white'
+  try {
+    event.target.appendChild(element);
+  } catch (error) {
+    console.warn("you can't move the item to the same place")
+  }
+}

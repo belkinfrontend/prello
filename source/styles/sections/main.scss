@@ -1,52 +1,63 @@
 main {
     margin: 20px;
-    
+
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-column-gap: 10px;
-   
+
     section {
         min-height: 400px;
-        //width: 300px;
-        border: 1px solid #212121;
-        
+        background-color: #E3E3E3;
+        border-radius: 3px;
+        margin: 5px 5px;
+        padding: 10px;
+        width: 260px;
+
         header {
-            background-color: dimgray;
-            border-bottom: 1px solid #212121;
-            color: aliceblue;
+            background-color: inherit;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;
         }
-        
+
         input {
-            width: 93%;
-            padding: 10px;
-            border-left: none;
-            border-right: none;
+            width: 94%;
+            height: 24px;
+            padding: 6px 8px;
+            border: none;
+            border-radius: 3px;
         }
-        
+
         ul {
             li {
-                border: 1px solid #212121;
-                padding: 10px;
+                height: 24px;
+                border-radius: 3px;
+                margin-top: 5px;
                 cursor: move;
-                
+
+                background-color: #FFF;
+                border-bottom: 1px solid #CCC;
+                padding: 6px 8px;
+                cursor: move;
+
                 img {
                     cursor: pointer;
-                }   
+                }
             }
             .lineThroughItem {
-                    text-decoration: line-through;
-                }
+                text-decoration: line-through;
+            }
         }
     }
     .new-section {
         border: none;
         border: 3px dashed #212121;
         border-radius: 10px;
-        
+
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         span {
             color: green;
             opacity: .5;
@@ -54,11 +65,21 @@ main {
             cursor: pointer;
             line-height: 10px;
             transition: all .5s;
-            
+
             &:hover {
                 opacity: .8;
             }
         }
-        
+
     }
 }
+
+.getItem {
+    width: 100%;
+    border-radius: 3px;
+    height: 90%;
+    
+}
+
+
+
