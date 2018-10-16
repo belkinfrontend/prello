@@ -53,10 +53,10 @@ function dataObjectUpdated() {
 }
 
 function removeItem() {
-  var item = this.parentNode.parentNode;
-  var parent = item.parentNode;
-  var id = parent.id;
-  var value = item.innerText;
+  let item = this.parentNode.parentNode;
+  let parent = item.parentNode;
+  let id = parent.id;
+  let value = item.innerText;
 
   if (id === 'todo') {
     data.todo.splice(data.todo.indexOf(value), 1);
@@ -95,6 +95,8 @@ function addItemToDOM(text, completed) {
   let list = (completed) ? document.getElementById('completed'):document.getElementById('todo');
 
   let item = document.createElement('li');
+  item.setAttribute("draggable", "true");
+    
   item.innerText = text;
 
   let buttons = document.createElement('div');
@@ -120,3 +122,37 @@ function addItemToDOM(text, completed) {
 
   list.insertBefore(item, list.childNodes[0]);
 }
+
+
+
+
+//===================== Drag & Drop
+ const dragStart = (event) => {
+  event.dataTransfer.setData("text/plain", event.target.id);
+}
+ const allowDrop = (event) => {
+  event.preventDefault();
+  //event.currentTarget.style.background = '#7f8082';
+}
+ const drop = (event) => {
+  event.preventDefault();
+  const data = event.dataTransfer.getData("text/plain");
+  const element = document.querySelector('li');
+  //event.currentTarget.style.background = 'white'
+  try {
+    event.target.appendChild(element);
+  } catch (error) {
+    console.warn("you can't move the item to the same place")
+  }
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ //=================
+ 

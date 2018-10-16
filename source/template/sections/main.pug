@@ -11,10 +11,7 @@ main
         
         .container
               // Uncompleted tasks
-              ul#todo.todo
-              // Completed tasks
-              
-
+              ul#todo.todo(class="getItem" ondragover="allowDrop(event)" ondrop="drop(event)")
             
 
     section
@@ -22,7 +19,7 @@ main
         //ul.getItem(ondragover="allowDrop(event)" ondrop="drop(event)")
         
         .container
-            ul#completed.todo
+            ul#completed.todo(class="getItem" ondragover="allowDrop(event)" ondrop="drop(event)")
             
     section.new-section
         span +

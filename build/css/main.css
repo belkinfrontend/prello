@@ -553,6 +553,10 @@ a {
   fill: none;
 }
 
+.getItem {
+  min-height: 500px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
