@@ -1,13 +1,13 @@
 //===================== Drag & Drop
-
 export const dragStart = (event) => {
     event.dataTransfer.setData("text/plain", event.target.id);
 }
-const allowDrop = (event) => {
+export const allowDrop = (event) => {
     event.preventDefault();
+    alert(222);
     //event.currentTarget.style.background = '#7f8082';
 }
-const drop = (event) => {
+export const drop = (event) => {
     event.preventDefault();
     const data = event.dataTransfer.getData("text/plain");
     const element = document.querySelector('li');

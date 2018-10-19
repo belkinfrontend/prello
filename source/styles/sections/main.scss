@@ -2,6 +2,7 @@ main {
     margin: 20px;
     display: flex;
     flex-flow: row wrap;
+    align-items: flex-start;
     section {
         min-height: 400px;
         background-color: #E3E3E3;
@@ -24,7 +25,7 @@ main {
                 text-indent: 18px;
                 background: rgba(255, 255, 255, 0.2);
                 border-radius: 5px 25px 25px 5px;
-                border: 0px;
+                border: 0;
                 box-shadow: none;
                 outline: none;
                 -webkit-appearance: none;

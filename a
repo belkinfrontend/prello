@@ -1,0 +1,29 @@
+[33mcommit c16514c6cce4177b646f68ff5a1959a5f21a51b3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Dmitry Belkin <dmitry.belkin@dataart.com>
+Date:   Thu Oct 18 17:45:46 2018 +0300
+
+    bug with 'import' modules
+
+[33mcommit 9da231dd4274dbf9e85fc395e560e13fdf1d549b[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dmitriy Belkin <belkin.frontend@gmail.com>
+Date:   Tue Oct 16 14:27:04 2018 +0300
+
+    some fixes with drag & drop
+
+[33mcommit 9356942f2f8314f6879df3299b2b6c3fa030a9c5[m
+Author: Dmitriy Belkin <belkin.frontend@gmail.com>
+Date:   Tue Oct 9 05:12:40 2018 +0300
+
+    ToDo structure was changed
+
+[33mcommit 32d5c5e9ee6dfb430b107a977c97847ceed49620[m
+Author: Dmitriy Belkin <belkin.frontend@gmail.com>
+Date:   Wed Oct 3 15:16:09 2018 +0300
+
+    drag&drop was added
+
+[33mcommit 2d8e9178c81bf76dcabc76bde4fc61d084fbfa6b[m
+Author: Dmitriy Belkin <belkin.frontend@gmail.com>
+Date:   Mon Oct 1 22:07:04 2018 +0300
+
+    delete item was added

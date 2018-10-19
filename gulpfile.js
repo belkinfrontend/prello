@@ -62,7 +62,7 @@ gulp.task('js', function() {
             './source/js/main.js'
         ])
         .pipe(webpackStream(webpackConfig), webpack)
-        // .pipe(babel())
+        //.pipe(babel())
         .pipe(sourcemaps.init())
         .pipe(concat('main.min.js'))
         .pipe(uglify())
