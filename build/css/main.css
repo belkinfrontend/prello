@@ -477,12 +477,35 @@ body {
   max-width: 1920px;
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -492,7 +515,8 @@ table {
   border-spacing: 0;
 }
 
-fieldset, img {
+fieldset,
+img {
   border: 0;
 }
 
@@ -500,42 +524,54 @@ input {
   border: 1px solid #b0b0b0;
   padding: 3px 5px 4px;
   color: #979797;
-  width: 190px;
 }
 
-address, caption, cite, code, dfn, th, var {
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
   font-style: normal;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-caption, th {
+caption,
+th {
   text-align: left;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   font-weight: normal;
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: '';
 }
 
-abbr, acronym {
+abbr,
+acronym {
   border: 0;
 }
 
-:active, :hover, :focus {
+:active,
+:hover,
+:focus {
   outline: 0;
   outline-offset: 0;
-}
-
-.section {
-  min-height: 100vh;
 }
 
 a {
@@ -601,9 +637,6 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
 }
 
 main section {
@@ -611,8 +644,8 @@ main section {
   background-color: #E3E3E3;
   border-radius: 6px;
   margin: 5px 15px;
-  -ms-flex-preferred-size: 260px;
-  flex-basis: 260px;
+  -ms-flex-preferred-size: 338px;
+  flex-basis: 338px;
 }
 
 main section header {
@@ -625,7 +658,9 @@ main section header {
 }
 
 main section header input {
+  width: 80%;
   height: 50px;
+  display: inline-block;
   margin-left: 10px;
   padding: 0 40px 0 0;
   color: #fff;
@@ -694,8 +729,8 @@ main section ul li img {
   cursor: pointer;
 }
 
-main section ul .lineThroughItem {
-  text-decoration: line-through;
+main section ul li input {
+  border-radius: 3px;
 }
 
 main .new-section {
@@ -742,15 +777,14 @@ ul.todo li:last-of-type {
 }
 
 ul.todo li .buttons {
-  width: 100px;
   height: 50px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 5px;
 }
 
 ul.todo li .buttons button {
-  width: 50px;
+  width: 30px;
   height: 50px;
   float: left;
   background: none;
